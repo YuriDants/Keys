@@ -1,11 +1,6 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic");
 
-/*
-	Solid State by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 /* Reset */
 
@@ -2001,7 +1996,7 @@
 
 	select option {
 		color: #ffffff;
-		background: #2e3141;
+		background: #c7ff84;
 	}
 
 	input[type="text"],
@@ -2727,7 +2722,7 @@
 		-webkit-transition: background-color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out;
-		background-color: rgba(53, 56, 73, 0.95);
+		background-color: rgba(44, 68, 68, 0.75);
 		height: 3.5em;
 		left: 0;
 		line-height: 3.5em;
@@ -3227,8 +3222,9 @@
 
 		#wrapper > header {
 			padding: 9em 0 6.25em 0 ;
-			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+			background-color: #40608e;
+			background-image: linear-gradient(to top, rgba(64, 96, 142, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+            
 			background-size: auto, cover;
 			background-position: center, 0% 30%;
 			margin-bottom: -6.5em;
