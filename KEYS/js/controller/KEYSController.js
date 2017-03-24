@@ -1,13 +1,11 @@
-KEYSModulo.controller('KEYSController', function (KEYSService, $scope) {
-    $scope.adm = [];
+KEYSModulo.controller('KEYSController', function ($scope) {
+    $scope.adms = [];
 
     $scope.adicionaAdm = function () {
-        $scope.adm.push({
+        $scope.adms.push({
             id: $scope.adm.id,
             nome: $scope.adm.nome,
-            email: $scope.aluno.email
+            email: $scope.adm.email
         });
     };
-
- 
 });

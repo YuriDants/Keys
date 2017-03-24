@@ -1,4 +1,4 @@
-KEYSModulo.config(function($routeProvider) {
+KEYSModulo.config(function($routeProvider, $locationProvider) {
     $routeProvider
         .when('/', {
             templateUrl: 'index.html'
