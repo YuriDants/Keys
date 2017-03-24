@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 
-<html>
+<html ng-controller="KEYSController">
 	<head>
 		<title> CADASTRO </title>
 		<meta charset="utf-8" />
@@ -52,15 +52,15 @@
 											<div class="row uniform">
 												<div class="6u 12u$(xsmall)">
 													<label for="demo-name">Nome</label>
-													<input type="text" name="demo-name" id="demo-name" value="" />
+													<input type="text" ng-model="adm.nome" name="demo-name" id="demo-name" value="" />
 												</div>
 												<div class="6u$ 12u$(xsmall)">
 													<label for="demo-email">Email</label>
-													<input type="email" name="demo-email" id="demo-email" value="" />
+													<input type="email" ng-model="adm.email" name="demo-email" id="demo-email" value="" />
 												</div>
                                                 <div class="6u$ 12u$(xsmall)">
 													<label for="demo-email">Número de Identificação</label>
-													<input type="text" name="id" id="id" value="" />
+													<input type="text" ng-model="adm.id" name="id" id="id" value="" />
 												</div>
 												<div class="12u$">
 													<label for="demo-category">Função</label>
@@ -73,27 +73,24 @@
 														</select>
 													</div>
 												</div>
-												<div class="4u 12u$(small)">
-													<input type="radio" id="terceirizada" name="terceirizada" checked>
-													<label for="demo-priority-low">Terceirizada</label>
-												</div>
-												<div class="4u 12u$(small)">
-													<input type="radio" id="efetiva" name="efetiva">
-													<label for="demo-priority-normal">Efetiva</label>
+                                                
+                                                <div class="6u$ 12u$(small)">
+													<input type="checkbox" id="terceirizada" name="terceirizada" checked>
+													<label for="demo-human">Terceirizada</label>
 												</div>
 												
 												<div class="6u 12u$(small)">
-													<input type="checkbox" id="demo-copy" name="demo-copy">
-													<label for="demo-copy">Email me a copy</label>
+													<input type="checkbox" id="demo-copy" name="demo-copy" checked>
+													<label for="demo-copy">Me manda email com novidades</label>
 												</div>
 												<div class="6u$ 12u$(small)">
-													<input type="checkbox" id="demo-human" name="demo-human" checked>
-													<label for="demo-human">Not a robot</label>
+													<input type="checkbox" id="demo-human" name="demo-human" >
+													<label for="demo-human">Não sou um robô</label>
 												</div>
 
 												<div class="12u$">
 													<ul class="actions">
-														<li><input type="submit" value="Cadastrar" class="special" /></li>
+														<li><input type="submit" value="Cadastrar" ng-click="adicionaAdm()" class="special" /></li>
 														<li><input type="reset" value="Limpar" /></li>
 													</ul>
 												</div>
