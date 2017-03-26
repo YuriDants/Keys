@@ -1,11 +1,18 @@
-KEYSModulo.controller('KEYSController', function ($scope) {
+KEYSModulo.controller('KEYSController', function (KEYSService, $scope) {
     $scope.adms = [];
 
-    $scope.adicionaAdm = function () {
-        $scope.adms.push({
-            id: $scope.adm.id,
-            nome: $scope.adm.nome,
-            email: $scope.adm.email
-        });
+    $scope.cadastrarAdm = function () {
+        
+        KEYSService.cadastrarAdm($scope.adm)
+            .then(function (response) {
+                // Chamado quando a resposta contém status de sucesso.
+                // Exibir no console o conteúdo da resposta.
+                console.log(response.data);
+                
+                // Criar adm com o dado (Json) de resposta do servidor.
+                var adm = response.data;
+                $scope.adms.push(adm);                
+            });
+        
     };
 });
